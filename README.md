@@ -31,7 +31,7 @@ A robust Web API designed for managing healthcare-related data including users, 
   Manage appointments for doctors and nurses, including booking creation and retrieval.
 
 - **API Documentation:**  
-  Detailed Swagger documentation for easy interaction and testing of all API endpoints.
+  Detailed Swagger , Postman documentation for easy interaction and testing of all API endpoints.
 
 ---
 
@@ -40,7 +40,7 @@ A robust Web API designed for managing healthcare-related data including users, 
 - **Authentication:** JWT (JSON Web Token)  
 - **Database:** SQL Server  
 - **Serialization:** System.Text.Json  
-- **Documentation:** Swagger/OpenAPI  
+- **Documentation:** Swagger/postman  
 
 ---
 
