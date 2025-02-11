@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "c014127e-2cf8-46a2-9f77-c330da6f2a67",
+		"name": "Medical Center",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788958"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxMTg4NDUsImV4cCI6MTczOTI5MTY0NSwiaWF0IjoxNzM5MTE4ODQ1LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.cncaGHI7DQHuw-CJhRB4FDivJXhvvFIWq5iT4VcS724",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sunrise Medical Center1\",\r\n  \"location\": \"123 Main Street, New York\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/MedicalCenters/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"MedicalCenters",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Medical Centers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxOTAzNDEsImV4cCI6MTczOTM2MzE0MSwiaWF0IjoxNzM5MTkwMzQxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.39bSmgujSJioLUWhe8Tv7x4NZQYUjUFIYJWvWmx-HUI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/MedicalCenters/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"MedicalCenters",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Medical Center By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxMTg4NDUsImV4cCI6MTczOTI5MTY0NSwiaWF0IjoxNzM5MTE4ODQ1LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.cncaGHI7DQHuw-CJhRB4FDivJXhvvFIWq5iT4VcS724",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/MedicalCenters/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"MedicalCenters",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

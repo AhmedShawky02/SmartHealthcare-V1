@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "290e395b-0940-41c9-999f-f5bce613e05f",
+		"name": "User Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788958"
+	},
+	"item": [
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"qwertyuasdfgh\",\r\n  \"email\": \"qwertyuasdfgh@gmail.com\",\r\n  \"password\": \"qwertyuasdfgh\",\r\n  \"age\": 20,\r\n  \"gender\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Users/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Users",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"qwertyuasdfgh@gmail.com\",\r\n  \"password\": \"qwertyuasdfgh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Users/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendTokenToEmail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkwNDU2OTQsImV4cCI6MTczOTIxODQ5NCwiaWF0IjoxNzM5MDQ1Njk0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.05sSSAfV1KH6ws-efHSv6wJdcCTSoOu1kNv4x3p5yh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Users/SendTokenToEmail",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Users",
+						"SendTokenToEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ResetPassword",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkwNDU2OTQsImV4cCI6MTczOTIxODQ5NCwiaWF0IjoxNzM5MDQ1Njk0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.05sSSAfV1KH6ws-efHSv6wJdcCTSoOu1kNv4x3p5yh0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tokenOTP\": \"null\",\r\n  \"password\": \"qwertyuasdfgh2255\",\r\n  \"confirmPassword\": \"qwertyuasdfgh2255\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Users/ResetPassword",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Users",
+						"ResetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Users/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Users",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkwNDU4ODAsImV4cCI6MTczOTIxODY4MCwiaWF0IjoxNzM5MDQ1ODgwLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.gsupTnXXJO578FE3YiyW9Aj2oRL0tu-8kTs4En8Vcbc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Users/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

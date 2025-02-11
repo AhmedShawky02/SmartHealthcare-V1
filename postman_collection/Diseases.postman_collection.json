@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "e9cc1092-c7f6-4ffb-a5ee-8f61dbfd86b5",
+		"name": "Diseases",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788958"
+	},
+	"item": [
+		{
+			"name": "Create Disease",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test2\",\r\n  \"userId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Diseases/CreateDisease",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Diseases",
+						"CreateDisease"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Symptom",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Diseases/CreateSymptom",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Diseases",
+						"CreateSymptom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Disease Symptom",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"diseaseId\": 2,\r\n  \"symptomId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Diseases/CreateDiseaseSymptom",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Diseases",
+						"CreateDiseaseSymptom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Disease",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

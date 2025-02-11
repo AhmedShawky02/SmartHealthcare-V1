@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "cfcc6a25-2bc8-4c85-bfd7-56137666a33b",
+		"name": "Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788958"
+	},
+	"item": [
+		{
+			"name": "Create Booking For Doctor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"date\": \"2025-02-13\",\r\n  \"userId\": 1,\r\n  \"doctorId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Booking/CreateBookingForDoctor",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Booking",
+						"CreateBookingForDoctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Booking For Nurse",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"date\": \"2025-02-13\",\r\n  \"userId\": 1,\r\n  \"nurseId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Booking/CreateBookingForNurse",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Booking",
+						"CreateBookingForNurse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Bookings For Doctor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Booking/GetAllBookingsForDoctor",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Booking",
+						"GetAllBookingsForDoctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Bookings For Nurse",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Booking/GetAllBookingsForNurse",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Booking",
+						"GetAllBookingsForNurse"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

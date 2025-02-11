@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "45933b0e-da1e-4d1a-a981-12d17d2b2770",
+		"name": "Department",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788958"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxOTAzNDEsImV4cCI6MTczOTM2MzE0MSwiaWF0IjoxNzM5MTkwMzQxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.39bSmgujSJioLUWhe8Tv7x4NZQYUjUFIYJWvWmx-HUI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Cardiology1",
+							"type": "text"
+						},
+						{
+							"key": "Picture",
+							"type": "file",
+							"src": "postman-cloud:///1efe7051-829a-4590-be7a-7cf60e7b104f"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Departments/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Departments",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Departments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxOTAzNDEsImV4cCI6MTczOTM2MzE0MSwiaWF0IjoxNzM5MTkwMzQxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.39bSmgujSJioLUWhe8Tv7x4NZQYUjUFIYJWvWmx-HUI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Departments/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Departments",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Department By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxMTg4NDUsImV4cCI6MTczOTI5MTY0NSwiaWF0IjoxNzM5MTE4ODQ1LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.cncaGHI7DQHuw-CJhRB4FDivJXhvvFIWq5iT4VcS724",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Departments/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Departments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

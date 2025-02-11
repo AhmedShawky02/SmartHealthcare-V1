@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "cfe5f357-5865-499c-901b-1f65ec9283d4",
+		"name": "Nurses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788958"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Doe",
+							"type": "text"
+						},
+						{
+							"key": "info",
+							"value": "Experienced cardiologist with over 3 years of experience.",
+							"type": "text"
+						},
+						{
+							"key": "ProfilePicture",
+							"type": "file",
+							"src": "postman-cloud:///1efe7051-829a-4590-be7a-7cf60e7b104f"
+						},
+						{
+							"key": "Age",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "CenterId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Nurses/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Nurses",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Nurses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Nurses/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Nurses",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Nurses By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Nurses/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Nurses",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

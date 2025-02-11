@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "1f2b1547-0674-4afc-ae57-6d84ae253ca8",
+		"name": "Doctors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40788958"
+	},
+	"item": [
+		{
+			"name": "Create New Doctor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxOTAzNDEsImV4cCI6MTczOTM2MzE0MSwiaWF0IjoxNzM5MTkwMzQxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.39bSmgujSJioLUWhe8Tv7x4NZQYUjUFIYJWvWmx-HUI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Dr. kro Doe",
+							"type": "text"
+						},
+						{
+							"key": "info",
+							"value": "Experienced cardiologist with over 10 years of experience.",
+							"type": "text"
+						},
+						{
+							"key": "AvailableTime",
+							"value": "Mon-Fri: 9 AM - 5 PM",
+							"type": "text"
+						},
+						{
+							"key": "profilePicture",
+							"type": "file",
+							"src": "postman-cloud:///1efe7051-829a-4590-be7a-7cf60e7b104f"
+						},
+						{
+							"key": "CenterId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "DepartmentId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Doctors/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Doctors",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Doctors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxOTAzNDEsImV4cCI6MTczOTM2MzE0MSwiaWF0IjoxNzM5MTkwMzQxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.39bSmgujSJioLUWhe8Tv7x4NZQYUjUFIYJWvWmx-HUI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Doctors/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Doctors",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Doctor By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxOTAzNDEsImV4cCI6MTczOTM2MzE0MSwiaWF0IjoxNzM5MTkwMzQxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.39bSmgujSJioLUWhe8Tv7x4NZQYUjUFIYJWvWmx-HUI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Doctors/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Doctors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Review",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2giLCJlbWFpbCI6InF3ZXJ0eXVhc2RmZ2hAZ21haWwuY29tIiwibmJmIjoxNzM5MjE3MzA4LCJleHAiOjE3MzkzOTAxMDgsImlhdCI6MTczOTIxNzMwOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3QiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0MDAwL3dlYnBvcnRhbCJ9.7ulDG9YQuzC9mIt13wn1t5ERGmvPS6MJ2uJUaDzyGLA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"rating\": 3,\r\n  \"comment\": \"The waiting time was too long, and the doctor seemed in a hurry.\",\r\n  \"userId\": 1,\r\n  \"doctorId\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7105/api/Reviews/Create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Reviews",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Reviews",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxOTAzNDEsImV4cCI6MTczOTM2MzE0MSwiaWF0IjoxNzM5MTkwMzQxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.39bSmgujSJioLUWhe8Tv7x4NZQYUjUFIYJWvWmx-HUI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Reviews/GetAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Reviews",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Review By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InF3ZXJ0eXVhc2RmZ2gyMjU1IiwiZW1haWwiOiJxd2VydHl1YXNkZmdoMjI1NUBnbWFpbC5jb20iLCJuYmYiOjE3MzkxOTAzNDEsImV4cCI6MTczOTM2MzE0MSwiaWF0IjoxNzM5MTkwMzQxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdCIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQwMDAvd2VicG9ydGFsIn0.39bSmgujSJioLUWhe8Tv7x4NZQYUjUFIYJWvWmx-HUI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7105/api/Reviews/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7105",
+					"path": [
+						"api",
+						"Reviews",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
