@@ -1,5 +1,5 @@
 
-<img width="1080" height="791" alt="Blue And White Modern Responsive Website Development Services Instagram Post" src="https://github.com/user-attachments/assets/e694248a-3770-403a-b330-339dd4ac97e0" />
+<img width="1129" height="721" alt="SmartHealthcare" src="https://github.com/user-attachments/assets/764138be-5a44-475e-9ef6-e25abd5935bd" />
 
 ### **Smart Healthcare System (Web API Project)**
 
